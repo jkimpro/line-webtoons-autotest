@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="com.webtoons.test">
+	<test name="testngTest">
+		<classes>
+			<class name="com.webtoons.test.Main" />
+			<class name="com.webtoons.test.UpsideModules"/>
+			<class name="com.webtoons.test.UpsideModulesSub" />
+			<class name="com.webtoons.test.RecommendModules" />
+			<class name="com.webtoons.test.WeeklyHotModules" />
+			<class name="com.webtoons.test.PopularByGenre" />
+			<class name="com.webtoons.test.OtherPageTest"/>
+			<class name="com.webtoons.test.ByGenrePanel"/>
+			<class name="com.webtoons.test.ByRatingPanel"/>
+			<class name="com.webtoons.test.TestingFinish" />
+		</classes>
+	</test>
+</suite>

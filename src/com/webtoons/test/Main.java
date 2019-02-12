@@ -16,67 +16,38 @@ import org.testng.annotations.Test;
 
 public class Main {
 
+	// xpath 찾을 때 가장 말단 부터
+	// 따로 메소드 선언하되 내부에 다 선언하도록
+	// 일일이 인덱스로 for no
+	// By는 변수로 하는 것이 좋음
+	// throw -> 통으로 안될것 같을때에
+	// try catch -> 한두번 해도 될 것 같을 때.
+
 	public static WebDriver driver;
 	public static int memoNum;
-	public static ArrayList <String> pageHistory = new ArrayList();
+	public static ArrayList<String> pageHistory = new ArrayList();
 	public String page;
-	
+
 	@BeforeClass
-	public static void setUp() throws Exception{
+	public static void setUp() throws Exception {
 		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://www.webtoons.com/en/");	
+		driver.get("https://www.webtoons.com/en/");
 	}
+
 	@Test
-	public void mod01_Login()throws Exception{
-	
+	public void mod01_Login() throws Exception {
+
 		driver.findElement(By.className("lk_login")).click();
 		driver.findElement(By.id("emailId")).sendKeys("");
 		driver.findElement(By.id("password")).sendKeys("");
-		driver.findElement(By.id("btnLogIn")).click();	
+		driver.findElement(By.id("btnLogIn")).click();
 	}
-	
+
 	@Test
-	public void mod02_goDiscover()throws Exception{
+	public void mod02_goDiscover() throws Exception {
 		driver.findElement(By.className("m04")).click();
 	}
 
-	@Test
-	public void mod03_upsideModules()throws Exception{
-		new UpsideModules();
-	}
-	
-	@Test
-	public void mod04_upsideModulesSub()throws Exception{
-		new UpsideModulesSub();
-	}
-	
-	@Test
-	public void mod05_recommendTitles() throws Exception{
-		new RecommendModules();
-	}
-	
-	@Test
-	public void mod06_weeklyHotModules() throws Exception{	
-		new WeeklyHotModules();
-	}
-	
-	@Test
-	public void mod07_popularByGenre() throws Exception{
-		new PopularByGenre();
-	}
-
-	@Test
-	public void mod08_otherPageTest() throws Exception{
-	 	for(int i =1; i<=5; i++)
-		{
-	 		new OtherPageTest(i);
-	 	}
-	}
-	
-	@AfterClass
-	public static void tearDown() throws Exception{
-		driver.quit();
-	}
 }

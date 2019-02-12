@@ -7,53 +7,63 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class WeeklyHotModules {
-	public String tmpBackgroundColor;
-	public String defaultColor ="rgba(0, 213, 100, 1)";
-	
-	Actions action = new Actions(Main.driver);
-	
-	public WeeklyHotModules() throws Exception
-	{
-		titleCheck();
-		titleGenreChange();
-	}
-	
+
 	@Test
-	public void titleCheck() throws Exception{
-		
-		WebElement element = Main.driver.findElement(By.className("weekly_hot_area"));
+	public void mod1_titleCheck() throws Exception {
+		System.out.println("titleCheck method in");
+
+		WebElement element;
+		String title;
+
+		element = Main.driver.findElement(By.className("weekly_hot_area"));
 		element = element.findElement(By.className("tit"));
-		
-		String title = element.getText();
+		title = element.getText();
+
+		Assert.assertTrue(element.isDisplayed());
 		Assert.assertEquals(title, "Weekly HOT");
 	}
-	
+
 	@Test
-	public void titleGenreChange() throws Exception
-	{
-		
-		for(int i =1; i<=6; i++)
-		{
-			WebElement element = Main.driver.findElement(By.xpath("//*[@id=\"content\"]/div[3]/div/div[1]/ul/li["+i+"]/a"));
-			
-			String genre = element.findElement(By.className("genre")).getText();
-			String title = element.findElement(By.className("subj")).getText();
-			
+	public void mod2_titleGenreChange() throws Exception {
+
+		System.out.println("titleGenreChange method in");
+
+		Actions action = new Actions(Main.driver);
+
+		for (int i = 1; i < 7; i++) {
+
+			WebElement element = Main.driver.findElement(By.xpath("//*[@class=\"discover_lst\"]/li[" + i + "]/a"));
+			WebElement compPageGen;
+			WebElement compPageSubj;
+
+			String genre;
+			String title;
+			String compGenre;
+			String compTitle;
+
+			genre = element.findElement(By.className("genre")).getText();
+			title = element.findElement(By.className("subj")).getText();
+			genre = genre.replace(" ", "");
+			title = title.replace(" ", "");
+
+			Assert.assertTrue(element.isDisplayed());
+
 			element.click();
-			
-			//페이지 전환
-			WebElement compPageGen = Main.driver.findElement(By.className("genre"));
-			WebElement compPageSubj = Main.driver.findElement(By.className("subj"));
-	
-			String compGenre = compPageGen.getText();
-			String compTitle = compPageSubj.getText();
-			
+
+			// 페이지 전환
+			compPageGen = Main.driver.findElement(By.className("genre"));
+			compPageSubj = Main.driver.findElement(By.className("subj"));
+
+			compGenre = compPageGen.getText();
+			compTitle = compPageSubj.getText();
+			compGenre = compGenre.replace(" ", "");
+			compTitle = compTitle.replace(" ", "");
+
 			Assert.assertEquals(compGenre, genre);
 			Assert.assertEquals(compTitle, title);
 
-			Main.driver.findElement(By.className("m04")).click();
+			Main.driver.findElement(By.className("m04")).click(); // 다시 돌아가기.
 		}
 	}
-	
-	
+
 }

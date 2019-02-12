@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.webtoons.test.Main">
+      <class name="com.webtoons.test.UpsideModules">
         <methods>
-          <include name="mod01_Login"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="upsideWordsClick"/>
+          <include name="upsideWordsCheck"/>
+          <include name="upsideBackToHome"/>
         </methods>
-      </class> <!-- com.webtoons.test.Main -->
+      </class> <!-- com.webtoons.test.UpsideModules -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

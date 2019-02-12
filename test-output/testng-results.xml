@@ -1,39 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="8" passed="7">
+<testng-results skipped="0" failed="1" ignored="0" total="21" passed="20">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="633959" started-at="2019-02-07T09:02:18Z" finished-at="2019-02-07T09:12:52Z">
+  <suite name="com.webtoons.test" duration-ms="273471" started-at="2019-02-11T09:36:17Z" finished-at="2019-02-11T09:40:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="633959" started-at="2019-02-07T09:02:18Z" finished-at="2019-02-07T09:12:52Z">
+    <test name="testngTest" duration-ms="273471" started-at="2019-02-11T09:36:17Z" finished-at="2019-02-11T09:40:50Z">
+      <class name="com.webtoons.test.PopularByGenre">
+        <test-method status="PASS" signature="mod1_titleCheck()[pri:0, instance:com.webtoons.test.PopularByGenre@7823a2f9]" name="mod1_titleCheck" duration-ms="131" started-at="2019-02-11T09:37:17Z" finished-at="2019-02-11T09:37:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mod1_titleCheck -->
+        <test-method status="PASS" signature="mod2_titleGenreColorCheck()[pri:0, instance:com.webtoons.test.PopularByGenre@7823a2f9]" name="mod2_titleGenreColorCheck" duration-ms="1304" started-at="2019-02-11T09:37:17Z" finished-at="2019-02-11T09:37:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mod2_titleGenreColorCheck -->
+        <test-method status="PASS" signature="mod3_detailsCheck()[pri:0, instance:com.webtoons.test.PopularByGenre@7823a2f9]" name="mod3_detailsCheck" duration-ms="105735" started-at="2019-02-11T09:37:18Z" finished-at="2019-02-11T09:39:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mod3_detailsCheck -->
+      </class> <!-- com.webtoons.test.PopularByGenre -->
       <class name="com.webtoons.test.Main">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webtoons.test.Main@4f933fd1]" name="setUp" is-config="true" duration-ms="9226" started-at="2019-02-07T09:02:18Z" finished-at="2019-02-07T09:02:27Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webtoons.test.Main@675d3402]" name="setUp" is-config="true" duration-ms="13013" started-at="2019-02-11T09:36:17Z" finished-at="2019-02-11T09:36:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="mod01_Login()[pri:0, instance:com.webtoons.test.Main@4f933fd1]" name="mod01_Login" duration-ms="11723" started-at="2019-02-07T09:02:27Z" finished-at="2019-02-07T09:02:39Z">
-          <exception class="org.openqa.selenium.ElementNotVisibleException">
+        <test-method status="PASS" signature="mod01_Login()[pri:0, instance:com.webtoons.test.Main@675d3402]" name="mod01_Login" duration-ms="5152" started-at="2019-02-11T09:36:30Z" finished-at="2019-02-11T09:36:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mod01_Login -->
+        <test-method status="PASS" signature="mod02_goDiscover()[pri:0, instance:com.webtoons.test.Main@675d3402]" name="mod02_goDiscover" duration-ms="2495" started-at="2019-02-11T09:36:35Z" finished-at="2019-02-11T09:36:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mod02_goDiscover -->
+      </class> <!-- com.webtoons.test.Main -->
+      <class name="com.webtoons.test.ByRatingPanel">
+        <test-method status="PASS" signature="mod1_byRatingsPanelCheck()[pri:0, instance:com.webtoons.test.ByRatingPanel@5c7fa833]" name="mod1_byRatingsPanelCheck" duration-ms="33034" started-at="2019-02-11T09:40:16Z" finished-at="2019-02-11T09:40:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mod1_byRatingsPanelCheck -->
+      </class> <!-- com.webtoons.test.ByRatingPanel -->
+      <class name="com.webtoons.test.TestingFinish">
+        <test-method status="PASS" signature="finish()[pri:0, instance:com.webtoons.test.TestingFinish@39aeed2f]" name="finish" duration-ms="298" started-at="2019-02-11T09:40:49Z" finished-at="2019-02-11T09:40:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webtoons.test.TestingFinish@39aeed2f]" name="tearDown" is-config="true" duration-ms="733" started-at="2019-02-11T09:40:50Z" finished-at="2019-02-11T09:40:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.webtoons.test.TestingFinish -->
+      <class name="com.webtoons.test.UpsideModules">
+        <test-method status="PASS" signature="mod1_upsideWordsCheck()[pri:0, instance:com.webtoons.test.UpsideModules@51565ec2]" name="mod1_upsideWordsCheck" duration-ms="1937" started-at="2019-02-11T09:36:38Z" finished-at="2019-02-11T09:36:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mod1_upsideWordsCheck -->
+        <test-method status="PASS" signature="mod2_upsideWordsClick()[pri:0, instance:com.webtoons.test.UpsideModules@51565ec2]" name="mod2_upsideWordsClick" duration-ms="10103" started-at="2019-02-11T09:36:40Z" finished-at="2019-02-11T09:36:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mod2_upsideWordsClick -->
+        <test-method status="PASS" signature="mod3_upsideBackToHome()[pri:0, instance:com.webtoons.test.UpsideModules@51565ec2]" name="mod3_upsideBackToHome" duration-ms="1448" started-at="2019-02-11T09:36:50Z" finished-at="2019-02-11T09:36:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mod3_upsideBackToHome -->
+      </class> <!-- com.webtoons.test.UpsideModules -->
+      <class name="com.webtoons.test.UpsideModulesSub">
+        <test-method status="PASS" signature="mod1_othersStartEventCheck()[pri:0, instance:com.webtoons.test.UpsideModulesSub@482f8f11]" name="mod1_othersStartEventCheck" duration-ms="343" started-at="2019-02-11T09:36:51Z" finished-at="2019-02-11T09:36:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mod1_othersStartEventCheck -->
+        <test-method status="PASS" signature="mod2_othersOptionEventCheck()[pri:0, instance:com.webtoons.test.UpsideModulesSub@482f8f11]" name="mod2_othersOptionEventCheck" duration-ms="2833" started-at="2019-02-11T09:36:51Z" finished-at="2019-02-11T09:36:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mod2_othersOptionEventCheck -->
+        <test-method status="PASS" signature="mod3_othersBackToHome()[pri:0, instance:com.webtoons.test.UpsideModulesSub@482f8f11]" name="mod3_othersBackToHome" duration-ms="3387" started-at="2019-02-11T09:36:54Z" finished-at="2019-02-11T09:36:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mod3_othersBackToHome -->
+      </class> <!-- com.webtoons.test.UpsideModulesSub -->
+      <class name="com.webtoons.test.OtherPageTest">
+        <test-method status="PASS" signature="mod1_detailInfoCheck()[pri:0, instance:com.webtoons.test.OtherPageTest@4cc0edeb]" name="mod1_detailInfoCheck" duration-ms="21932" started-at="2019-02-11T09:39:04Z" finished-at="2019-02-11T09:39:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mod1_detailInfoCheck -->
+        <test-method status="PASS" signature="mod2_subNumPageConvertCheck()[pri:0, instance:com.webtoons.test.OtherPageTest@4cc0edeb]" name="mod2_subNumPageConvertCheck" duration-ms="11011" started-at="2019-02-11T09:39:26Z" finished-at="2019-02-11T09:39:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mod2_subNumPageConvertCheck -->
+      </class> <!-- com.webtoons.test.OtherPageTest -->
+      <class name="com.webtoons.test.RecommendModules">
+        <test-method status="PASS" signature="mod1_homeHighLightCheck()[pri:0, instance:com.webtoons.test.RecommendModules@1593948d]" name="mod1_homeHighLightCheck" duration-ms="1639" started-at="2019-02-11T09:36:58Z" finished-at="2019-02-11T09:36:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mod1_homeHighLightCheck -->
+        <test-method status="PASS" signature="mod2_recommendTitleCheck()[pri:0, instance:com.webtoons.test.RecommendModules@1593948d]" name="mod2_recommendTitleCheck" duration-ms="85" started-at="2019-02-11T09:36:59Z" finished-at="2019-02-11T09:36:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mod2_recommendTitleCheck -->
+      </class> <!-- com.webtoons.test.RecommendModules -->
+      <class name="com.webtoons.test.ByGenrePanel">
+        <test-method status="PASS" signature="mod1_byGenrePanelCheck()[pri:0, instance:com.webtoons.test.ByGenrePanel@457e2f02]" name="mod1_byGenrePanelCheck" duration-ms="32452" started-at="2019-02-11T09:39:37Z" finished-at="2019-02-11T09:40:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mod1_byGenrePanelCheck -->
+        <test-method status="FAIL" signature="mod2_genreMatchCheck()[pri:0, instance:com.webtoons.test.ByGenrePanel@457e2f02]" name="mod2_genreMatchCheck" duration-ms="7209" started-at="2019-02-11T09:40:09Z" finished-at="2019-02-11T09:40:16Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[element not interactable
+              <![CDATA[stale element reference: element is not attached to the page document
   (Session info: chrome=71.0.3578.98)
   (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'AL01121234', ip: '10.12.52.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'AL01121234', ip: '10.12.52.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\USER\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50787}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: a732f774924054e43f25585b11fb6775]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\USER\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52852}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 1350d2a2e36bf779c9883b4cd3325563]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not interactable
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=71.0.3578.98)
   (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'AL01121234', ip: '10.12.52.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'AL01121234', ip: '10.12.52.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\USER\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50787}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: a732f774924054e43f25585b11fb6775
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\USER\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52852}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 1350d2a2e36bf779c9883b4cd3325563
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -47,8 +141,8 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-at com.webtoons.test.Main.mod01_Login(Main.java:36)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+at com.webtoons.test.ByGenrePanel.mod2_genreMatchCheck(ByGenrePanel.java:115)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -76,43 +170,21 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mod01_Login -->
-        <test-method status="PASS" signature="mod02_goDiscover()[pri:0, instance:com.webtoons.test.Main@4f933fd1]" name="mod02_goDiscover" duration-ms="2012" started-at="2019-02-07T09:02:39Z" finished-at="2019-02-07T09:02:41Z">
+        </test-method> <!-- mod2_genreMatchCheck -->
+      </class> <!-- com.webtoons.test.ByGenrePanel -->
+      <class name="com.webtoons.test.WeeklyHotModules">
+        <test-method status="PASS" signature="mod1_titleCheck()[pri:0, instance:com.webtoons.test.WeeklyHotModules@1b604f19]" name="mod1_titleCheck" duration-ms="82" started-at="2019-02-11T09:36:59Z" finished-at="2019-02-11T09:36:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mod02_goDiscover -->
-        <test-method status="PASS" signature="mod03_upsideModules()[pri:0, instance:com.webtoons.test.Main@4f933fd1]" name="mod03_upsideModules" duration-ms="18380" started-at="2019-02-07T09:02:41Z" finished-at="2019-02-07T09:02:59Z">
+        </test-method> <!-- mod1_titleCheck -->
+        <test-method status="PASS" signature="mod2_titleGenreChange()[pri:0, instance:com.webtoons.test.WeeklyHotModules@1b604f19]" name="mod2_titleGenreChange" duration-ms="17016" started-at="2019-02-11T09:36:59Z" finished-at="2019-02-11T09:37:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mod03_upsideModules -->
-        <test-method status="PASS" signature="mod04_upsideModulesSub()[pri:0, instance:com.webtoons.test.Main@4f933fd1]" name="mod04_upsideModulesSub" duration-ms="4986" started-at="2019-02-07T09:02:59Z" finished-at="2019-02-07T09:03:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mod04_upsideModulesSub -->
-        <test-method status="PASS" signature="mod05_recommendTitles()[pri:0, instance:com.webtoons.test.Main@4f933fd1]" name="mod05_recommendTitles" duration-ms="1181" started-at="2019-02-07T09:03:04Z" finished-at="2019-02-07T09:03:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mod05_recommendTitles -->
-        <test-method status="PASS" signature="mod06_weeklyHotModules()[pri:0, instance:com.webtoons.test.Main@4f933fd1]" name="mod06_weeklyHotModules" duration-ms="14660" started-at="2019-02-07T09:03:05Z" finished-at="2019-02-07T09:03:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mod06_weeklyHotModules -->
-        <test-method status="PASS" signature="mod07_popularByGenre()[pri:0, instance:com.webtoons.test.Main@4f933fd1]" name="mod07_popularByGenre" duration-ms="92553" started-at="2019-02-07T09:03:20Z" finished-at="2019-02-07T09:04:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mod07_popularByGenre -->
-        <test-method status="PASS" signature="mod08_otherPageTest()[pri:0, instance:com.webtoons.test.Main@4f933fd1]" name="mod08_otherPageTest" duration-ms="478079" started-at="2019-02-07T09:04:53Z" finished-at="2019-02-07T09:12:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mod08_otherPageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.webtoons.test.Main@4f933fd1]" name="tearDown" is-config="true" duration-ms="1101" started-at="2019-02-07T09:12:51Z" finished-at="2019-02-07T09:12:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.webtoons.test.Main -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- mod2_titleGenreChange -->
+      </class> <!-- com.webtoons.test.WeeklyHotModules -->
+    </test> <!-- testngTest -->
+  </suite> <!-- com.webtoons.test -->
 </testng-results>
