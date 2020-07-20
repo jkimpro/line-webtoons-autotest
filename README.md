@@ -1,5 +1,5 @@
-# LineWebtoonAuto
+# line-webtoos-autotest
 
-www.webtoons.com LINE Automation Test using Selenium / TestNG / GoogleChromeDriver
+www.webtoons.com LINE Automation Test Logic using Selenium / TestNG / GoogleChromeDriver
 
 Code written by Junhyuk Kim(okjcd123)
